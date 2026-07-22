@@ -153,6 +153,19 @@
     .data-banner { flex-direction: column; }
     footer { flex-direction: column; gap: 8px; text-align: center; padding: 20px 24px; }
   }
+
+  /* PDF page break control */
+  @media print {
+    section, .platform-card, .model-block, .obl-col, .legal-card,
+    .data-banner, .model-condition, .deal-card, .hero, .cta-section,
+    .platform-grid, .model-grid, .obligations-grid, .legal-grid {
+      page-break-inside: avoid;
+    }
+    nav { position: relative !important; }
+    .hero { padding-top: 40px !important; }
+    section { padding: 40px 48px !important; }
+  }
+
 </style>
 </head>
 <body>
@@ -439,9 +452,9 @@
   <div class="cta-inner">
     <h2>LISTOS PARA<br><span>ARRANCAR</span></h2>
     <p>El workspace NOA está configurado para Jujuy, Salta, Tucumán, Catamarca, Santiago del Estero, La Rioja, Mendoza, San Juan y San Luis. Solo falta la firma para activar el acceso completo.</p>
-    <a href="mailto:gonzalo@adsmartm.com" class="cta-btn">Confirmar Acuerdo →</a>
+    <a href="mailto:gfarrus@adsmartm.com" class="cta-btn">Confirmar Acuerdo →</a>
     <div class="cta-contact">
-      Gonzalo Farrus · <a href="mailto:gonzalo@adsmartm.com">gonzalo@adsmartm.com</a> · <a href="https://calendly.com/adsmartm/30min">Agendar call</a>
+      Gonzalo Farrus · <a href="mailto:gfarrus@adsmartm.com">gfarrus@adsmartm.com</a> · <a href="https://calendly.com/adsmartm/30min">Agendar call</a>
     </div>
   </div>
 </div>
